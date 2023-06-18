@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="surveyForm_Styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Fill this survey form below, please.</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label" >Enter your full name <input type="text" id="name" placeholder="Slim Shady." required>
+        </label>
+        <label id="email-label" >Enter your email address <input type="email" id="email" placeholder="slimshady07@domain.com" required>
+        </label>
+        <label id="number-label" >Enter your age <input type="number" id="number" min="13" max="120" placeholder="Age">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label id="referral-dropdown">How did you hear about us?
+          <select id="dropdown">
+            <option value="">(Select one)</option>
+            <option value="1">Social Media</option>
+            <option value="2">College</option>
+            <option value="3">MrBeast</option>
+          </select>
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="yes-no">Would you recommend us?</p>
+        <label id="button-yes" for="definitely">
+          <input type="radio" value="definitely" class="decision" name="button" id="definitely" checked> Definitely
+        </label>
+        <label id="button-no" for="nope">
+          <input type="radio" value="definitely" class="decision" name="button" id="nope"> Nope
+        </label>
+      </fieldset>
+      <fieldset>
+        <p class="user-opinion">What do you think we need to improve?</p>
+        <label>
+          <input type="checkbox" class="multiple" value="teachers" /> Teachers
+        </label>
+        <label>
+          <input type="checkbox" class="multiple" value="marketing" /> Marketing
+        </label>
+        <label>
+          <input type="checkbox" class="multiple" value="trust" /> Trust
+        </label>
+        <label>
+          <input type="checkbox" class="multiple" value="better intuitive platform" /> Better intuitive platform
+        </label>
+        <label>
+          <input type="checkbox" class="multiple" value="other" /> Other
+        </label>
+        <textarea name="further-details" id="further" cols="30" rows="3" placeholder="If you selected the (Other) option, please feel free to tell us we will not critize your opinion ;)"></textarea>
+        <input type="submit" id="submit">
+        </fieldset>
+    </form>
+    <br>
+</body>
+</html>

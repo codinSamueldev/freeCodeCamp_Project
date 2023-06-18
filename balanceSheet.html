@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="balanceSheet.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de balance</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>
+                <span class="flex">
+                    <span>AcmeWidgetCorp</span>
+                    <span>Hoja de Balance</span> <!-- Escribimos en este orden para que haya mayor legibilidad a los screen readers, luego lo reversamos con css. -->
+                </span>
+            </h1>
+            <div id="years" aria-hidden="true">
+                <span class="year">2019</span>
+                <span class="year">2020</span>
+                <span class="year">2021</span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <caption>Activos</caption> <!-- Las tablas de HTML usan el caption element para describir sobre que se trata la tabla. EL caption siempre debe de ir posicionado como el primer hijo de una table element. -->
+                    <thead> 
+                        <tr> <!-- tr es usado para indicar una fila de una tabla. -->
+                            <td></td> <!-- td stands for una celda de datos. Lo dejaremos vacio ya que este elemento existe solo para asegurarnos de que la table tiene 4 layouts de columna, y se asocia con los headers de las columnas correctas. -->
+                            <th><span class="sr-only year">2019</span></th> <!-- th indica una cabecera de celda. -->
+                            <th><span class="sr-only year">2020</span></th>
+                            <th class="current"><span class="sr-only year">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Efectivo <span class="description">Este es todo el efectivo que tenemos a mano.</span></th>
+                            <td>$25</td>
+                            <td>$30</td>
+                            <td class="current">$28</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Corriente <span class="description">Nuestra cuenta primaria de transacciones.</span></th>
+                            <td>$54</td>
+                            <td>$56</td>
+                            <td class="current">$53</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Ahorros <span class="description">Los fondos son apartados para emergencias.</span></th>
+                            <td>$500</td>
+                            <td>$650</td>
+                            <td class="current">$728</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Activos</span></th>
+                            <td>$579</td>
+                            <td>$736</td>
+                            <td class="current">$809</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>Pasivos</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only">2019</span></th>
+                            <th><span class="sr-only">2020</span></th>
+                            <th><span class="sr-only">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Prestamos <span class="description">El excepcional balance de nuestro prestamos para startup.</span></th>
+                            <td>$500</td>
+                            <td>$250</td>
+                            <td class="current">$0</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Gastos <span class="description">Gastos anuales anticipados, tales como la nómina.</span></th>
+                            <td>$200</td>
+                            <td>$300</td>
+                            <td class="current">$400</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Crédito <span class="description">El excepcional balance en nuestra tarjeta de crédito.</span></th>
+                            <td>$50</td>
+                            <td>$50</td>
+                            <td class="current">$75</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Pasivos</span></th>
+                            <td>$750</td>
+                            <td>$600</td>
+                            <td class="current">$475</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>Patrimonio Neto</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only">2019</span></th>
+                            <th><span class="sr-only">2020</span></th>
+                            <th><span class="sr-only">2021</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Patrimonio Neto</span></th>
+                            <td>$-171</td>
+                            <td>$136</td>
+                            <td class=" current">$334</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

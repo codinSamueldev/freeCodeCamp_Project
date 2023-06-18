@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="registrationForm_Styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Formulario de registro</h1>
+    <p>Llena este formulario con la información requerida por favor.</p>
+    <form action="https://register-demo.freecodecamp.org" method="post">
+        <fieldset>
+            <label for="first-name">Ingresa tu nombre: <input type="text" name="" id="first-name" required placeholder="Juana"></label>
+            <label for="last-name">Ingresa tu apellido: <input type="text" name="" id="last-name" required placeholder="Peña"></label>
+            <label for="email">Ingresa tu email: <input type="email" name="" id="email" required placeholder="ejemploemail@dominio.com"></label>
+            <label for="new-password">Crea una nueva contraseña: <input type="password" name="" id="new-password" pattern="[a-z 0-9]{8,}" required></label>
+        </fieldset>
+        <fieldset>
+            <!-- En los elementos de tipo radio es recomendable (para buenas prácticas) que solo se pueda seleccionar un botón a la vez, esto lo logramos colocandoles el mismo name="" a los botones type="radio". Así mismo, para que el botón pueda ser seleccionado dando click al texto debemos agregarle tanto para el label for="ejemplo" como para el input type="radio" id="ejemplo"; así lograremos que se pueda seleccionar el botón tan solo clickeando en el texto que lo precede. -->
+            <label for="personal-account"><input class="inline" type="radio" name="account-type" id="personal-account"> Cuenta personal</label>
+            <label for="business-account"><input class="inline" type="radio" name="account-type" id="business-account"> Cuenta profesional</label>
+            <label for="terms-and-conditions"><input class="inline" type="checkbox" name="" id="terms-and-conditions" required> Acepto los <a href="https://www.freecodecamp.org/news/terms-of-service/" target="_blank">términos y condiciones</a></label>
+        </fieldset>
+        <fieldset>
+            <label for="profile-picture"></label>Añade una foto de perfil: <input type="file" name="picture" id="profile-picture">
+            <label for="age">Ingresa tu edad (años) <input type="number" name="age" id="age" min="13" max="120"></label>
+            <label for="referrer">¿Cómo te diste cuenta de nosotros?
+            <select name="selection" id="referrer">
+                <option value="">(selecciona una)</option>
+                <option value="1">En las noticias</option>
+                <option value="2">Por Ibai Llanos</option>
+                <option value="3">Un foro</option>
+                <option value="4">Otro</option>
+            </select>
+            </label>
+            <label for="bio">Añade una pequeña biografía:
+                <textarea name="about-user" id="bio" cols="30" rows="3" placeholder="Me gusta programar en la playa con una agüita 'e coco..."></textarea>
+            </label>
+        </fieldset>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

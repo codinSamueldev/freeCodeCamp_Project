@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="balance_Sheet_test.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de balance</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>
+                <span class="flex">
+                    <span>
+                        Pamicasa Co.
+                    </span>
+                    <span>
+                        Presupuesto de balance
+                    </span>
+                </span>
+            </h1>
+            <div class="years" aria-hidden="true">
+                <span class="year">2021</span>
+                <span class="year">2022</span>
+                <span class="year">2023</span>
+            </div>
+            <div class="table-wrap">
+                <table>
+                    <caption id="unset">Activos</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2021</span></th>
+                            <th><span class="sr-only year">2022</span></th>
+                            <th class="current"><span class="sr-only year">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Efectivo <span class="description">Este es el efectivo con el cual contamos a la mano.</span></th>
+                            <td>$50</td>
+                            <td>$30</td>
+                            <td class="current">$70</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Corriente <span class="description">Nuestra cuenta primaria de transacciones.</span></th>
+                            <td>$55</td>
+                            <td>$37</td>
+                            <td class="current">$74</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Ahorros <span class="description">Fondos unicamente para emergencias.</span></th>
+                            <td>$550</td>
+                            <td>$370</td>
+                            <td class="current">$740</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Activos</span></th>
+                            <td>$655</td>
+                            <td>$437</td>
+                            <td class="current">$884</td>
+                        </tr>
+                </table>
+                <table>
+                    <caption>Pasivos</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only year">2021</span></th>
+                            <th><span class="sr-only year">2022</span></th>
+                            <th class="current"><span class="sr-only year">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="data">
+                            <th>Prestamos <span class="description">El balance del prestamo para nuestra startup.</span></th>
+                            <td>$600</td>
+                            <td>$300</td>
+                            <td class="current">$0</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Gastos <span class="description">Gastos anuales anticipados, tales como la nómina.</span></th>
+                            <td>$250</td>
+                            <td>$350</td>
+                            <td class="current">$400</td>
+                        </tr>
+                        <tr class="data">
+                            <th>Crédito <span class="description">El balance de nuestra tarjeta de crédito.</span></th>
+                            <td>$25</td>
+                            <td>$20</td>
+                            <td class="current">$40</td>
+                        </tr>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Pasivos</span></th>
+                            <td>$875</td>
+                            <td>$670</td>
+                            <td class="current">$440</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <caption>Patrimonio Neto</caption>
+                    <thead>
+                        <tr>
+                            <td></td>
+                            <th><span class="sr-only">2021</span></th>
+                            <th><span class="sr-only">2022</span></th>
+                            <th><span class="sr-only">2023</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="total">
+                            <th>Total <span class="sr-only">Patrimonio neto</span></th>
+                            <td>$-220</td>
+                            <td>$-233</td>
+                            <td class="current">$444</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>        
+    </main>
+</body>
+</html>

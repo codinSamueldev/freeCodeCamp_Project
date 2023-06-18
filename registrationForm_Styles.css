@@ -1,0 +1,85 @@
+body{
+    width: 100%;
+    /* El elemento vh stands for Viewport Height, significando que 100vh ocupa el 100% de la altura visible de la pantalla. */
+    height: 100vh;
+    margin: 0;
+    /* overflow-y: hidden; */
+    background-color: #1b1b32;
+    color: #f5f6f7;
+    font-family: Tahoma;
+    font-size: 16px;
+}
+
+/* Estilizando y convirtiendo el formulario responsive. */
+h1, p{
+    margin: 1em auto;
+    text-align: center;
+}
+
+/* Aquí logramos que el formulario se convierta responsive evitando que se extiendan los elementos cuando son pantallas grandes, o por el contrario cuando son chicas. */
+form{
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding-bottom: 1em;
+}
+
+/* Eliminando los bordes de los fieldset para que solo queden los que separan un contenido del otro.. */
+fieldset{
+    border: 0;
+    padding: 2rem 0;
+    border-bottom: 3px solid rgb(59, 59, 79);
+}
+
+/* Ya que el borde del último fieldset no se veia bien, lo eliminamos con este pseudo clase de css. */
+fieldset:last-of-type{
+    border-bottom: none;
+}
+
+label{
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* Estilizamos los input, textarea y select del formulario para que el texto quede arriba de dichos elementos, adicionalmente con una estatura miníma. */
+input, textarea, select{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-height: 2em;
+}
+
+input, textarea{
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+}
+
+/* Evitamos que los inputs del segundo fieldset se vean disparejos y los alineamos para que queden bien centrados. */
+.inline{
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+/* Para estilizar el botton de enviar/submit utilizamos un selector de atributo. */
+input[type="submit"]{
+    display: block;
+    width: 60%;
+    min-width: 300px;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: #ffffff;
+}
+
+a{
+    color: whitesmoke;
+}

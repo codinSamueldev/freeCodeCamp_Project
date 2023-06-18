@@ -1,0 +1,103 @@
+h1, h2, p{
+    text-align: center;
+}
+
+/* Estilizando los elementos <hr> (las lineas esas que son de tipo block que cubren todo la linea) */
+hr{
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line{
+    margin-top: 25px;
+}
+
+/* Cambiando el estilo de fuente del elemento <p> que contiene el "Est. 2000" */
+.established{
+    font-style: italic;
+}
+
+/* Añadiendo la imagen de fondo, fuente de todo el texto de la página y un poco de espacio del padding. */
+body{
+    font-family: sans-serif;
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    padding: 20px;
+}
+
+/* Estilizando el div que tiene como class="menu" con ancho del 80% del div y añadiendo padding para todos los lados de 20px. */
+.menu{
+    width: 80%;
+    max-width: 500px;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+img{
+    display: block;
+    margin-top: -25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1, h2{
+    font-family: Impact, serif;
+}
+
+h1{
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+.flavor, .dessert{
+    text-align: left;
+    width: 75%;
+}
+
+.price{
+    text-align: right;
+    width: 25%;
+}
+
+/* Añadiendo el tamaño de la fuente de los elementos <p> y el espacio entre los margenes. */
+.item p{
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilizando de aquí para abajo todo el footer de la página. */
+footer{
+    font-size: 14px;
+}
+
+a{
+    color: black;
+}
+
+/* Estilizamos el link de color gris cuando el usuario ya hizo click/visitó el link. */
+a:visited{
+    color: black;
+}
+
+a:hover{
+    color: brown;
+}
+
+/* Estilizamos nuevamente el link, pero esta vez cuando el link está siendo clickeado. */
+a:active{
+    color: brown;
+}
+
+/* Aquí le recortamos un poco el espacio bajo de la dirección del footer, para que tenga la misma proporción del h1 con respecto al espacio superior. */
+.address{
+    margin-bottom: 5px;
+}

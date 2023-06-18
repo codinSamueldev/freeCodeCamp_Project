@@ -1,0 +1,81 @@
+h1{
+    text-align: center;
+    background-color: rgb(0, 255, 255);
+}
+
+.marker{
+    width: 200px;
+    height: 25px;
+    /* El margin: auto; permite que todos los margin (right, left, top and bottom) tengan la misma propiedad auto. Adicionalmente el 10px los toma los margin top and bottom, el auto los toma el left and right. */
+    margin: 15px auto;
+}
+
+.container{
+    /* La función rgb acepta valores o argumentos para los colores red, green, and blue por lo que produce un color. Cada Red, Green and Blue van desde el 0 hasta el 255; por lo cual el 0 significa que hay un 0% de color que viene siendo el negro, y el 255 indica que hay un 100% de ese color.
+    
+    Otra forma muy común de aplicar colores son con valores hexadecimales, los cuales empiezan con el caracter # and toma seis caracteres desde el 0-9 y A-F; el primer par de caracteres representa el Red, el segundo par el Green y el último par toma el Blue, por ejemplo: #4B5320. Con los colores hexadecimales, el 00 es 0% de ese color, y FF es 100% de ese color. Por lo tanto #00FF00 significa = 0% red, 100% green, y 0% blue, lo que es lo mismo decir rgb(0, 255, 0); */
+    padding: 25px 0;
+}
+
+/* Syntaxis de linear-gradient: linear-gradient(gradientDirection, color1, color2, ...);
+gradientDirection es la dirección de la linea usada para la transición; color1 y color2 son los colores como argumento; los cuales serán utilizados en la misma transición. Pueden ser cualesquier tipo de color incluye keywords como hex, rgb, o hsl. linear-gradient puede tener tres colores como argumento, adicionalmente podremos indicarle que color queremos que predomine en la transición con el %, por ejemplo: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255)); indica que el rojo va a ocupar un 75% de la transición. Si no se indican los grados se tomará 180° por default. */
+.red{
+    background: linear-gradient( rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* Añadimos una sombra para que cada crayola/marcador se vea un poco más realista, la propiedad box-shadow nos permite aplicar una o más sombras alrededor de un elemento. Syntaxis de box-shadow.
+    box-shadow: offsetX offsetY color;
+    Donde offsetX mueve la sombra hacia la derecha y los valores negativos a la izquierda.
+    
+    offsetY mueve la sombra hacia abajo y los valores negativos hacia arriba.
+    
+    Adicionalmente, podemos agregarle un efecto un poco borroso para que se vea con mejor sombra, entre mayor sea el blurRadius mayor efecto logramos. Así mismo, si queremos que la sombra sea más profunda podemos lograrlo con el valor spreadRadius el cual va antes del color y después del blurRadius. */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+}
+
+.green{
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 green;
+}
+
+.blue{
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+  box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
+}
+
+.orange{
+    background: linear-gradient(rgb(196, 70, 24), rgb(252, 147, 109), rgb(191, 82, 42));
+    box-shadow: 0 0 20px 1px orange;
+}
+
+.lawn{
+    background: linear-gradient(rgb(31, 166, 112), rgb(12, 247, 153), rgb(14, 156, 99));
+    box-shadow: 0 0 20px 1px rgb(60 230 162 / 80%);
+}
+
+.violet{
+    background: linear-gradient(rgb(80, 30, 179), rgb(137, 78, 252), rgb(61, 8, 166));
+    box-shadow: 0 0 20px 1px rgb(171, 129, 252);
+}
+
+.sleeve{
+    width: 110px;
+    height: 25px;
+    /* La propiedad opacity es totalmente lo contrario al trasparente; iniciando con el valor 0.0 que es igual a decir que tiene 0% de opacidad (que es invisible), y 1.0 siendo el 100% de la opacidad (es totalmente opaco, osea visualmente sólido). En adición, es similar al canal alpha que cumple la misma función con los mismos parámetros, y se puede llamar dentro de la función rgb() como rgba (). */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* La abreviatura border-left permite darle el ancho, estilo y color del borde al mismo tiempo. */
+    border-left: 10px double black;
+
+}
+
+.cap{
+    width: 60px;
+    height: 25px;
+}
+
+.cap, .sleeve{
+    display: inline-block;
+}
+
+body{
+    background-color: aqua;
+    font-family: 'Climate Crisis', cursive;
+}

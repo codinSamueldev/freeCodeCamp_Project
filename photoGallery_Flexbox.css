@@ -1,0 +1,43 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: #f5f6f7;
+}
+
+.header{
+    text-transform: uppercase; /* Convierte el texto en mayúscula */
+    padding: 32px;
+    background-color: #0a0a23;
+    color: #fff;
+    text-align: center;
+    border-bottom: 4px solid #fdb347;
+}
+
+.gallery{
+    display: flex; /* Flexbox es un diseño uni-dimensional que controla la forma en que los items estan espaceados y alineados dentro de un contenedor. */
+    flex-direction: row; /* Flexbox tiene un main y cross axis. La main axis está definida por la propiedad flex-direction: el cual tiene cuatro posibles valores: row (horizontal axis con los items de izquierda a derecha); row-reverse (horizontal axis con los items derecha a izquierda); column (vertical axis con items de arriba a abajo); column-reverse (vertical axis con items de abajo a arriba) */
+    flex-wrap: wrap; /* Esta propiedad determina como tus items se comportan cuandoo el contenedor es muy pequeño; seteandolo como wrap permitirá que los items se envuelvan hacia la siguiente fila o columna; nowrap previene que los items se envuelvan y los encoge si es necesario. */
+    justify-content: center; /* Esta propiedad determina como los items dentro de un contenedor flex están posicionados en la main axis, afectando su posición y espacio al lado de ellos. */
+    align-items: center; /* Permite modificar la posición de los elementos. */
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto; /* Lo centramos. */
+    gap: 16px; /* Para que las imagenes tengan un espacio entre ellas. */
+}
+
+.gallery img{
+    width: 100%;
+    height: 300px;
+    max-width: 350px;
+    object-fit: cover; /* Para evitar que las imagenes se distorsionen utilizamos la propiedad object-fit para determinar como las imagenes deben comportarse. El cover permite que la imagen se rellene dentro del container mientras mantiene el aspecto del radio, cortandolo para que quede. */
+    border-radius: 10px;
+}
+
+.gallery::after{ /* el pseudo elemento ::after crean un elemento que es el último hijo del elemento seleccionado. Se puede usar para añadir un elemento después de la última imagen. Si le añadimos el mismo ancho de las imagenes, este se empujará hasta la última imagen cuando el espacio sea de dos columnas. */
+    content: "";
+    width: 350px;
+}

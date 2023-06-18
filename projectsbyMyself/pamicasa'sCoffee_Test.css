@@ -1,0 +1,57 @@
+*{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma;
+}
+
+body{
+    background-image: url(/ImagesforBackgrounds/projectsbyMyself/Coffee_Test/coffee\ -\ copia.png);
+    padding: 20px;
+}
+
+.table{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(249, 155, 125, 0.7);
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.last-flavor{
+    padding-bottom: 10px;
+}
+
+/* -------------// Styling the first block of the table. //----------- */
+.dark{
+    background-color: rgba(66, 70, 66, 0.7);
+    width: 100%;
+}
+
+.dark-flavor{
+    color: #B2B2B2;
+    margin-bottom: -5px;
+}
+/* -------------// end of styling the first block of the table. //----------- */
+
+/* -------------// Styling the second block of the table. //----------- */
+.bright{
+    background-color: rgba(243, 244, 237, 0.7);
+    width: 100%;
+}
+
+.bright-flavor{
+    color: #424642;
+}
+/* -------------// end of styling the first block of the table. //----------- */
+
+.dessert{
+    background-color: rgba(192, 96, 20, 0.7);
+    width: 100%;
+}
+
+.dessert-flavor{
+    color: #FFF9DE;
+}
+
+a{
+    text-decoration: none;
+}

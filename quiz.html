@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="quiz_styles.css">
+    <meta charset="UTF-8"> <!-- el elemento meta es usado para especificar la información de la página, tales como, el title, la descripción , palabras claves y el autor. -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freeCodeCamp Accessibility Quiz practice project" />
+    <title>Quiz</title>
+</head>
+<body>
+    <header> <!-- Este elemento se usa para darle introducción a la página y darle un menú de navegación. -->
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <li><a accesskey="i" href="#student-info">INFO</a></li> <!-- Para lograr navegar dentro de la página, se le añade el mismo id del h2 dentro del href="" del anchor element. Por último, el atributo accesskey="" permite crear atajos de teclado -->
+                <li><a accesskey="h" href="#html-questions">HTML</a></li>
+                <li><a accesskey="c" href="#css-questions">CSS</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <main> <!-- Este elemento contiene el contenido base de la página. -->
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Estudiante</h2>
+                <div class="info">
+                    <label for="student-name">Nombre: </label>
+                    <input type="text" name="student-name" id="student-name" required> <!-- Para linkear cada input con el label, es necesario añadirle al input el mismo contenido que está escrito dentro del for="" del label; esto lo hacemos para buenas practicas de programación. -->
+                </div>
+
+                <div class="info">
+                    <label for="student-email">Email: </label>
+                    <input type="email" name="student-email" id="student-email" required>
+                </div>
+
+                <div class="info">
+                    <label for="birth-date">Nacimiento:<span class="sr-only">(Fecha de Nacimiento)</span> </label>
+                    <input type="date" name="birth-date" id="birth-date" required>
+                </div>
+            </section> <!-- the role atributte permite dar mayor accesibilidad a los navegadores. Cada role atributte requiere de un label, el cual ayuda a los lectores de pantalla entender el propósito de la región; un método para añadir un heading element dentro de la region y luego referenciarla es con un aria-labelledby attribute. -->
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML</h2>
+                <div class="question-block">
+                    <p>1</p><fieldset class="question" name="html-question-two"><legend>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo ab molestiae voluptatem laborum quos quam sit numquam, amet qui placeat aspernatur, at iste expedita deserunt error maxime quas maiores adipisci.</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q1-a1"> <!-- Aunque no era necesario añadir un label, lo hicimos por buenas prácticas de programación. Así mismo, para evitar que se seleccionen a la vez los inputs type="radio" le colocamos los mismos names="question one" y name="question two" respectivamente al orden de las preguntas. -->
+                                    <input type="radio" id="q1-a1" name="question one">
+                                    Verdadero
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q1-a2">
+                                    <input type="radio" id="q1-a2" name="question one">
+                                    Falso
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p><fieldset class="question"><legend>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore maxime nesciunt amet asperiores qui voluptatem placeat omnis quis accusantium, iure cupiditate? Ea impedit sit perferendis. Deserunt in impedit sit error!</legend>
+                        <ul class="answers-list">
+                            <li>
+                                <label for="q2-a1">
+                                    <input type="radio" id="q2-a1" name="question two">
+                                    Verdadero
+                                </label>
+                            </li>
+                            <li>
+                                <label for="q2-a2">
+                                    <input type="radio" id="q2-a2" name="question two">
+                                    Falso
+                                </label>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </div>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS</h2>
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="customer">¿Eres un desarrollador Front-end?</label> <!-- Para linkear un label con un select element, el for del label debe hacer match/coincidir con el id del select element. -->
+                    </div>
+                    <div class="answer">
+                        <select name="customer" id="customer" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="yes">Sí</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="css-questions">Tienes alguna pregunta:</label>
+                    </div>
+                    <div class="answer"></div>
+                    <textarea name="css-questions" id="css-questions" cols="33" rows="5" placeholder="Sí, me gustaría saber como ser millonario"></textarea>
+                </div>
+            </section>
+            <button type="submit">Enviar</button>
+            <hr id="final-space">
+        </form>
+    </main> 
+    <footer>
+        <address>
+            <a href="https://freecodecamp.org" target="_blank" rel="noopener noreferrer">freeCodeCamp</a><br> <!-- En esta linea de código también podemos utilizar dentro del href="" el siguiente dominio con fines educativos: https://example.com/ -->
+            San Francisco<br>
+            California<br>
+            USA
+        </address>
+    </footer>
+</body>
+</html>
