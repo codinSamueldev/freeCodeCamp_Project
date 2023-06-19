@@ -1,0 +1,29 @@
+*, ::before, ::after{ /* El ::before crea un pseudo-selector el cual es el primer hijo del elemento seleccionado; el ::after hace lo mismo, pero con el último hijo del elemento seleccionado. Estos elementos son comúnmente seleccionados para crear contenido cósmetico.*/
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box; /* Los browsers pueden aplicar margenes y padding por default a especificos elementos. */
+}
+
+#piano{
+    width: 992px;
+    height: 290px;
+    background-color: #00471b;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+}
+
+.keys{
+    width: 949px;
+    height: 180px;
+    background-color: #040404;
+    padding-left: 2px;
+}
+
+.key{
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+}
