@@ -12,12 +12,16 @@ html{
     background-color: #0f216b;
     margin: 80px auto;
     padding: 90px 20px 0 20px;
+    position: relative;
+    border-radius: 10px;
 }
 
 .logo{
     font-family: 'Recursive', sans-serif;
     font-size: 2.1rem;
     color: #ffffff;
+    position: absolute;
+    top: -10px;
 }
 
 .keys{
@@ -25,6 +29,7 @@ html{
     height: 180px;
     background-color: #040404;
     padding-left: 2px;
+    overflow: hidden; /* Agregamos el overflow: hidden para cuando hayan pantallas iguales o menores a 768px las teclas no se vean que colapsen hacia abajo */
 }
 
 .key{
@@ -34,6 +39,7 @@ html{
     height: 175px;
     margin: 2px;
     float: left;
+    border-radius: 0 0 3px 3px;
 }
 
 .key.black--key::after{
@@ -43,4 +49,29 @@ html{
     left: -18px;
     width: 32px;
     height: 100px;
+    border-radius: 0 0 3px 13px;
+}
+
+@media (max-width: 768px) {
+    #piano{
+        width: 358px;
+    }
+
+    .keys{
+        width: 318px;
+    }
+
+    .logo{
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1199px){
+    #piano{
+        width: 675px;
+    }
+
+    .keys{
+        width: 633px;
+    }
 }
