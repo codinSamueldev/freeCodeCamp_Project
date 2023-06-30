@@ -1,0 +1,4 @@
+/* Con el asterisco (*) podemos hacer target a todo. */
+*{
+    border: 1px solid black;
+}
