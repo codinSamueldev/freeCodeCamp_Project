@@ -322,4 +322,30 @@ body{ /* Removemos el margin default del body y escondemos la scroll bar que apa
         #223 100%
         );
     }
+
+    .cone {
+        width: 0px;
+        height: 0px;
+        border-right: 70px solid transparent;
+        border-left: 70px solid transparent;
+        border-top: 100px solid #FFD700;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        display: flex;
+    }
+
+    img{
+        width: 6.5vh;
+        height: auto;
+        position: absolute;
+        top: 31vh;
+        left: 17.1vw;
+    }
+}
+
+@media (min-width: 1001px) and (max-width: 5000px) {
+    img{
+        display: none;
+    }
 }
