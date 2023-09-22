@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #F8F0E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 3rem; /* In order to avoid nav 'eats' the content, it's necessary the margin top to separate them. */
+    padding: 1rem;
+}
+
+/* Styling the navigation bar */
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2rem;
+    padding: 2rem;
+    box-shadow: 0 0 1.5rem 0 #000;
+    background: #F5F5F5;
+}
+
+header *{
+    display: inline; /* The * wildcard will modify all elements within header as inline, also that property removes instantly the bullet-point of li. */
+}
+
+header .header-img img{
+    width: 30vw;
+}
+
+nav ul{
+    display: flex;
+    gap: 1rem;
+    margin-left: auto;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul a{
+    color: #000;
+    text-decoration: none;
+}

@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="landing.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trombones</title>
@@ -9,13 +15,13 @@
 <body>
     <header>
         <div class="header-img">
-            <img src="" alt="Logo">
+            <img src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png" alt="Logo">
         </div>
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link">Features</li>
-                <li class="nav-link">How it works</li>
-                <li class="nav-link">Pricing</li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#how-it-works">How it works</a></li>
+                <li><a href="#pricing">Pricing</a></li>
             </ul>
         </nav>
     </header>
@@ -26,36 +32,60 @@
         <input type="submit" value="Get started!">
     </form>
     <!-- This section will contain important details and the video reference. -->
-    <main class="main-section">
+    <main class="main-section" id="features">
         <div class="first-item">
-            <img src="" alt="Premium">
-            <h3>Lorem</h3>
+            <i class="fa fa-3x fa-fire"></i>
+            <h3>Premium Materials</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cumque alias neque odit tempore?</p>
         </div>
         <div class="second-item">
-            <img src="" alt="Fast shipping">
-            <h3>Lorem</h3>
+            <i class="fa fa-3x fa-truck"></i>
+            <h3>Fast Shipping</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cumque alias neque odit tempore?</p>
         </div>
         <div class="third-item">
-            <img src="" alt="Quality">
-            <h3>Lorem</h3>
+            <i class="fa fa-3x fa-battery-full"></i>
+            <h3>Quality</h3>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint cumque alias neque odit tempore?</p>
         </div>
-        <section class="how-it-works">
+        <section id="how-it-works">
             <iframe src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&controls=0&showinfo=0" frameborder="0" height="300" allowfullscreen></iframe>
         </section>
     </main>
-    <section class="pricing">
-        <div class=""></div>
-        <div class=""></div>
-        <div class=""></div>
+    <section id="pricing">
+        <div class="tenor">
+            <h4>TENOR TROMBONE</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <button type="submit">Order now</button>
+        </div>
+        <div class="bass">
+            <h4>BASS TROMBONE</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <button type="submit">Order now</button>
+        </div>
+        <div class="valve">
+            <h4>VALVE TROMBONE</h4>
+            <ol>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ol>
+            <button type="submit">Order now</button>
+        </div>
     </section>
     <footer>
-        <p></p>
-        <p></p>
-        <p></p>
-        <span></span>
+        <p>Privacy</p>
+        <p>Terms and Conditions</p>
+        <p>Contact</p>
+        <span>Copyright 2016, Original Trombones</span>
     </footer>
 </body>
 </html>
