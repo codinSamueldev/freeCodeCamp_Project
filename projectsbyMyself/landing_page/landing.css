@@ -99,3 +99,10 @@ main .about .description{
     justify-content: center;
     padding: 0.5rem;
 }
+
+/* How it works video section. */
+#how-it-works{
+    display: flex;
+    justify-content: center;
+    margin: 1.5rem 0;
+}
