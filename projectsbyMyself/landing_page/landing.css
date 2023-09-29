@@ -24,6 +24,7 @@ header{
     padding: 2rem;
     box-shadow: 0 0 1.5rem 0 #000;
     background: #F5F5F5;
+    z-index: 999;
 }
 
 header *{
@@ -105,4 +106,79 @@ main .about .description{
     display: flex;
     justify-content: center;
     margin: 1.5rem 0;
+}
+
+/* Pricing section */
+#pricing{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#pricing .product{
+    margin: 1.5rem;
+    border: 1px solid #000;
+}
+
+#pricing .product h4{
+    background-color: #ddd;
+    padding: 0.7rem;
+    font-weight: 500;
+}
+
+#pricing .product h5{
+    display: flex;
+    justify-content: center;
+    margin: 0.4rem 0;
+    font-size: 1.5rem;
+}
+
+#pricing .product ol{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    list-style: none;
+}
+
+#pricing .product button{
+    display: inline;
+    transform: translateX(1.5rem);
+    margin: 1rem;
+    padding: 0.4rem;
+    border: none;
+    border-top-right-radius: 25%;
+    border-top-left-radius: 25%;
+    background-color: gold;
+}
+
+/* Footer section */
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin: 0;
+    width: 92vw;
+    height: auto;
+    padding: 0.7rem;
+    gap: 1.25rem;
+    background-color: #ddd;
+}
+
+footer p{
+    font-weight: 700;
+}
+
+footer span{
+    color: #444;
+}
+
+@media (min-width: 280px) and (max-width: 400px) {
+    #how-it-works iframe{
+        width: 90vw;
+    }
+
+    footer span{
+        margin-left: 6rem;
+    }
 }
