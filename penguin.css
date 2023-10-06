@@ -1,0 +1,34 @@
+body{
+    background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-mountain{
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-top: 6rem;
+    background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
+    position: absolute;
+    transform: skew(0deg, 44deg);
+    z-index: 2;
+}
+
+.penguin{
+    width: 18.75rem; /* same as 300px */
+    height: 18.75rem;
+    margin: auto;
+    margin-top: 4.68rem; /* same as 75px */
+}
+
+.ground{
+    width: 100vw;
+    height: 25rem; /* It is same as 400px. */
+    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    position: absolute;
+    z-index: 3;
+    margin-top: -3.62rem;
+}
