@@ -10,11 +10,32 @@ body{
 .left-mountain{
     width: 18.75rem;
     height: 18.75rem;
-    margin-top: 6rem;
+    margin-top: 6.25rem; /* same as 100px. */
     background: linear-gradient(rgb(203, 241, 228), rgb(80, 183, 255));
     position: absolute;
     transform: skew(0deg, 44deg);
     z-index: 2;
+}
+
+.back-mountain{
+    width: 18.75rem;
+    height: 18.75rem;
+    background: linear-gradient(rgb(203, 241, 228), rgb(47, 170, 255));
+    position: absolute;
+    z-index: 1;
+    transform: rotate(45deg);
+    left: 6.87rem;
+    top: 14.06rem;
+}
+
+.sun{
+    width: 12.50rem;
+    height: 12.50rem;
+    background: yellow;
+    position: absolute;
+    border-radius: 50%;
+    top: -4.68rem;
+    right: -4.68rem;
 }
 
 .penguin{
@@ -22,12 +43,60 @@ body{
     height: 18.75rem;
     margin: auto;
     margin-top: 4.68rem; /* same as 75px */
+    z-index: 4;
+    position: relative;
+}
+
+.penguin *{
+    position: absolute;
+}
+
+.penguin-head{
+    width: 50%; /* Half of its parent. */
+    height: 45%;
+    background: linear-gradient(
+        45deg,
+        gray,
+        rgb(239, 240, 228)
+    );
+    border-radius: 70% 70% 65% 65%;
+    top: 10%;
+    left: 25%;
+    z-index: 1;
+}
+
+.penguin-body{
+    width: 53%;
+    height: 45%;
+    background: linear-gradient(
+        45deg,
+        rgb(134, 133, 133)
+        0%,
+        rgb(234, 231, 231)
+        25%,
+        white 67%
+    );
+    border-radius: 80% 80% 100% 100%;
+    top: 40%;
+    left: 23.5%;
+}
+
+.penguin-body::before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 45%;
+    background-color: gray;
 }
 
 .ground{
     width: 100vw;
     height: 25rem; /* It is same as 400px. */
-    background: linear-gradient(90deg, rgb(88, 175, 236), rgb(182, 255, 255));
+    background: linear-gradient(
+        90deg,
+        rgb(88, 175, 236),
+        rgb(182, 255, 255)
+    );
     position: absolute;
     z-index: 3;
     margin-top: -3.62rem;
